@@ -30,13 +30,6 @@ class AdobeConnectFarsiType:
             time.sleep(1)
             pyautogui.press('a')
             listener.join()
-
-    def KeyBoardLayout_Hex(self):
-        user32 = ctypes.WinDLL('user32', use_last_error=True)
-        cwin = user32.GetForegroundWindow()
-        klid = user32.GetKeyboardLayout(user32.GetWindowThreadProcessId(cwin, 0))
-        language_id = klid & (2**16 - 1)
-        return hex(language_id)
     
     def Farsi_Combinations(self):
         return {
@@ -69,10 +62,9 @@ class AdobeConnectFarsiType:
         return last_line.lower().startswith(Process.lower())
 
     def Farsi_Formatter(self, key):
-        if(str(self.KeyBoardLayout_Hex()) == '0x429'):
-            time.sleep(0.015)
-            pyautogui.press('backspace')
-            pyautogui.hotkey('shift', 'x')
+        time.sleep(0.015)
+        pyautogui.press('backspace')
+        pyautogui.hotkey('shift', 'x')
 
     def OnAnyKeyPressed(self, key):
         if(self.on_verify == False):
