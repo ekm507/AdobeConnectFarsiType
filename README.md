@@ -15,7 +15,7 @@ In the Adobe Connect chat section, to type in Persian or Arabic, the written wor
 
 But with this simple script, you can fix this problem and type correctly in Adobe Connect. The only operation this script does is when it writes a Persian/Arabic word that causes a problem, it deletes it and replaces the formatted word.
 
-- Simple, , versatile
+- Simple
 - Convenient
 - Versatile
 
