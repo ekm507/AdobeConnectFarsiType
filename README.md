@@ -1,7 +1,7 @@
 <div align='center'>
   <br />
   <p>
-    <a href='https://github.com/ThisIsMatin/AdobeConnectFarsiType'><img src='https://s17.picofile.com/file/8423500392/logo.png' width='546' alt='Mujocso Logo' /></a>
+    <a href='https://github.com/ThisIsMatin/AdobeConnectFarsiType'><img src='https://raw.githubusercontent.com/ThisIsMatin/AdobeConnectFarsiType/master/images/logo.png' width='546' alt='Mujocso Logo' /></a>
   </p>
     <br />
   <p>
@@ -20,7 +20,7 @@ But with this simple script, you can fix this problem and type correctly in Adob
 - Versatile
 
 ## Preview
-![AdobeConnectFarsiType](https://s16.picofile.com/file/8423500418/preview.gif 'AdobeConnectFarsiType')
+![AdobeConnectFarsiType](https://raw.githubusercontent.com/ThisIsMatin/AdobeConnectFarsiType/master/images/preview.gif 'AdobeConnectFarsiType')
 
 ## How To Use
 * First, open your CMD and use the 'cd' command to change the directory to a repository.
