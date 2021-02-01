@@ -8,8 +8,6 @@ import time
 import os
 import sys
 
-
-
 class AdobeConnectFarsiType:
     def __init__(self):
 
