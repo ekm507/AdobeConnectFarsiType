@@ -19,6 +19,7 @@ class AdobeConnectFarsiType:
                 message='Your Adobe Connect is not running!',
                 app_name='Adobe Connect Farsi Type',
             )
+            time.sleep(4)
             sys.exit(0)
 
         self.COMBINATIONS = []
@@ -53,6 +54,7 @@ class AdobeConnectFarsiType:
             message='To use, please make your keyboard language English first!\nThen the program automatically changes your keyboard to Persian.',
             app_name='Adobe Connect Farsi Type',
         )
+        time.sleep(4)
         sys.exit(0)
 
     def ProcessExists(self, Process):
