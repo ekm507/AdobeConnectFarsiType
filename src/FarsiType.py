@@ -1,10 +1,8 @@
 from pynput import keyboard
 from plyer import notification
 import subprocess
-import ctypes
 import pyautogui
 import time
-import os
 import sys
 
 class AdobeConnectFarsiType:
