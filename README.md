@@ -11,7 +11,7 @@
 </div>
 
 ## About
-In the Adobe Connect chat section, to type in Persian or Arabic, the written words will be confused and will be written and sent illegibly(This problem occurs when writing one Persian/Arabic word)
+In the Adobe Connect chat section, to type in Persian or Arabic, the written words will be confused and will be written and sent illegibly (This problem occurs when writing one Persian/Arabic word)
 
 But with this simple script, you can fix this problem and type correctly in Adobe Connect. The only operation this script does is when it writes a Persian/Arabic word that causes a problem, it deletes it and replaces the formatted word.
 
@@ -27,4 +27,4 @@ But with this simple script, you can fix this problem and type correctly in Adob
 
 * Install the modules whose names are in the requirements file using (``` pip install -r requirements.txt ```).
 
-* Now all you have to do is change the language of your keyboard to English and run the source using (```python src/FarsiType.py```).
+* Change the language of your keyboard to English and run the source using (```python src/FarsiType.py```).
