@@ -69,13 +69,12 @@ class AdobeConnectFarsiType:
     def OnAnyKeyPressed(self, key):
         if(self.on_verify == False):
             if key == keyboard.KeyCode(char='a'):
-                if(self.on_verify == False):
-                    self.on_verify = True
-                    pyautogui.press('backspace')
-                    self.NotifyStart() # Start App
+                self.on_verify = True
+                pyautogui.press('backspace')
+                self.NotifyStart() # Start App
             else:
                 self.on_verify = True
-                self.NotifyLanguageError() # Byebye
+                self.NotifyLanguageError() # Say Error
 
 
         if any([key in COMBO for COMBO in self.COMBINATIONS]):
