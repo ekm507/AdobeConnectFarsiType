@@ -10,15 +10,15 @@ class AdobeConnectFarsiType:
 
         self.on_verify = False
         self.is_D_pressed = False
-        if(self.ProcessExists('connect.exe') == False):
-            print('Your Adobe Connect is not running!')
-            notification.notify(
-                title='Adobe Connect Farsi Type',
-                message='Your Adobe Connect is not running!',
-                app_name='Adobe Connect Farsi Type',
-            )
-            time.sleep(4)
-            sys.exit(0)
+        # if(self.ProcessExists('connect.exe') == False):
+        #     print('Your Adobe Connect is not running!')
+        #     notification.notify(
+        #         title='Adobe Connect Farsi Type',
+        #         message='Your Adobe Connect is not running!',
+        #         app_name='Adobe Connect Farsi Type',
+        #     )
+        #     time.sleep(4)
+        #     sys.exit(0)
 
         self.COMBINATIONS = []
         for com in self.Farsi_Combinations():
