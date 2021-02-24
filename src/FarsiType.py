@@ -9,7 +9,7 @@ class AdobeConnectFarsiType:
     def __init__(self):
 
         self.on_verify = False
-
+        self.is_D_pressed = False
         if(self.ProcessExists('connect.exe') == False):
             print('Your Adobe Connect is not running!')
             notification.notify(
@@ -37,7 +37,7 @@ class AdobeConnectFarsiType:
         }
 
     def NotifyStart(self):
-        pyautogui.hotkey('alt', 'shift') # Change Language To Farsi
+        # pyautogui.hotkey('alt', 'shift') # Change Language To Farsi
         print('Adobe Connect Farsi Type Enabled !')
         notification.notify(
                 title='Adobe Connect Farsi Type',
@@ -64,7 +64,11 @@ class AdobeConnectFarsiType:
     def Farsi_Formatter(self, key):
         time.sleep(0.015)
         pyautogui.press('backspace')
-        pyautogui.hotkey('shift', 'x')
+        pyautogui.hotkey('shift', 'd')
+        try:
+            self.current.remove(key)
+        except:
+            pass
 
     def OnAnyKeyPressed(self, key):
         if(self.on_verify == False):
@@ -79,11 +83,18 @@ class AdobeConnectFarsiType:
 
         if any([key in COMBO for COMBO in self.COMBINATIONS]):
             self.current.add(key)
-            if any(all(k in self.current for k in COMBO) for COMBO in self.COMBINATIONS):
-                self.Farsi_Formatter(key)
+            if self.is_D_pressed == False:
+                self.is_D_pressed = True
+                if any(all(k in self.current for k in COMBO) for COMBO in self.COMBINATIONS):
+                        self.Farsi_Formatter(key)
+            else:
+                self.is_D_pressed = False
 
     def OnAnyKeyReleased(self, key):
         if any([key in COMBO for COMBO in self.COMBINATIONS]):
-            self.current.remove(key)
+            try:
+                self.current.remove(key)
+            except:
+                pass
 
 app = AdobeConnectFarsiType()
