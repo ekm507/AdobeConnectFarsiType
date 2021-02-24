@@ -10,14 +10,22 @@
   </p>
 </div>
 
+this is forked from https://github.com/ThisIsMatin/AdobeConnectFarsiType
+
+## fork changes
+- make it compatible with standard persian keyboard layout.
+- let it work with any other apps!
+
 ## About
 In the Adobe Connect chat section, to type in Persian or Arabic, the written words will be confused and will be written and sent illegibly (This problem occurs when writing one Persian/Arabic word)
+
 
 But with this simple script, you can fix this problem and type correctly in Adobe Connect. The only operation this script does is when it writes a Persian/Arabic word that causes a problem, it deletes it and replaces the formatted word.
 
 - Simple
 - Convenient
 - Versatile
+
 
 ## Preview
 ![AdobeConnectFarsiType](https://raw.githubusercontent.com/ThisIsMatin/AdobeConnectFarsiType/master/images/preview.gif 'AdobeConnectFarsiType')
